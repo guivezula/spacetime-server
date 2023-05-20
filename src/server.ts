@@ -7,13 +7,15 @@ const prisma = new PrismaClient()
 
 app.register(cors)
 
-app.get('/habits', async () => {
-    const habits = await prisma.habit.findMany()
-    return habits;
+app.get('/users', async () => {
+  const users = await prisma.user.findMany()
+  return users
 })
 
-app.listen({ 
-    port: 3333
-}).then(() => {
+app
+  .listen({
+    port: 3333,
+  })
+  .then(() => {
     console.log('HTTP server running!')
-})
+  })
