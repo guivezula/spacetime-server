@@ -8,6 +8,7 @@
     "dev": "tsx watch src/server.ts",
     "prisma:studio": "npx prisma studio",
     "migrate:dev": "npx prisma migrate dev",
+    "migrate:reset": "npx prisma migrate reset",
     "lint": "eslint src --ext .ts --fix"
   },
   "keywords": [],
@@ -16,7 +17,8 @@
   "dependencies": {
     "@fastify/cors": "^8.2.1",
     "@prisma/client": "^4.14.1",
-    "fastify": "^4.17.0"
+    "fastify": "^4.17.0",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.2.0",
